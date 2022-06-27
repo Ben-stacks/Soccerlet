@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>View Item</title>
+
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=1.0">
+
+	<!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.png" />
+	<link href="../fontawesome/css/font-awesome.min.css" rel="stylesheet" />
+	
+	<style type="text/css">
+		       
+       
+
+               /*form {
+					  border: 2px solid #015025;
+					  font-family: Arial;
+
+					  width: 50%;
+					  left: 30%;
+					  margin-top: 35px;
+					  background: #02c358;
+					  position: absolute;
+					  left: 20;
+					  color: #05e569;
+					  padding: 22px;
+					  font-size: 22px;
+					  text-align: left;
+					}*/
+
+			.form1 {
+					  border: 2px solid #015025;
+					  font-family: Arial;
+
+					  width: 50%;
+					  left: 30%;
+					  margin-top: 35px;
+					  /*background: #02c358;*/
+					  /*position: absolute;*/
+					  
+					  color: #05e569;
+					  padding: 22px;
+					  font-size: 22px;
+					  text-align: left;
+					}
+
+			.form2 {
+					  /*border: 2px solid #015025;*/
+					  font-family: Arial;
+
+					  width: 40%;
+					  left: 30%;
+					  margin-top: 35px;
+					  /*background: #02c358;*/
+					  /*position: absolute;*/
+					  
+					  color: #05e569;
+					  padding: 22px;
+					  font-size: 22px;
+					  text-align: left;
+
+					  margin-left: -45px;
+					}
+
+
+					.container {
+					  padding: 20px;
+					  background-color: #02c358;
+					  color: #013419;
+					  font-size: 16px !important;
+					  text-align: left;
+
+					  display: flex;
+				      flex-direction: row;
+				      flex-wrap: wrap;
+				      align-content: center;
+				      justify-content: center;
+
+
+					}
+
+					.container2 {
+					  padding: 20px;
+					  background-color: #76dea4;
+					  color: #013419;
+					  font-size: 16px !important;
+					  text-align: left;
+
+
+					}
+
+
+					.item-img{
+						max-width: 40%;
+						min-width: 210px;
+						padding: 8px;
+					}
+					
+
+					.note{ 
+					  padding: 25px;
+					  background-color: #02c358;
+					  color: #013c1c;
+					  font-size: 22px !important;
+					  text-align: center;
+					  margin-bottom: -70px;
+    				  font-weight: 600;
+
+    				  /*display: none;*/
+					 }
+
+					 .note-icon{ 
+					  padding: 25px;
+					  background-color: #02c358;
+					  color: #013c1c;
+					  font-size: 22px !important;
+					  text-align: center;
+					  margin-bottom: -20px;
+    				  font-weight: 600;
+
+    				  text-align: center;
+					 }
+
+
+
+					 .s { 
+				          color: #004620;
+				          font-size: 65px;
+				         }
+
+
+					input[type=text], input[type=email], input[type=submit] {
+					  width: 100%;
+					  padding: 12px;
+					  margin: 8px 0;
+					  display: inline-block;
+					  /*border: 1px solid #015025;*/
+					  box-sizing: border-box;
+
+					  border: none;
+					  outline: none;
+					  color: #015025;
+					  background: #76dea4;
+					  font-size: 16px !important;
+					}
+
+
+					
+					.check-out a:hover {
+					  opacity: 0.8;
+					} 
+
+
+					.check-out a{
+
+					  width: 100%;
+					  padding: 12px;
+					  margin: 8px 0;
+					  display: inline-block;
+					  /*border: 1px solid #015025;*/
+					  box-sizing: border-box;
+
+					  /*border: none;
+					  outline: none;
+					  color: #015025;
+					  background: #76dea4;*/
+					  font-size: 16px !important;
+
+					  background-color: #015025;
+					  color: #76dea4;
+					  border: none;
+					  text-align: center;
+					  text-decoration: none;
+
+					}
+
+
+
+					input[type=submit] {
+					  background-color: #015025;
+					  color: #76dea4;
+					  border: none;
+					}
+
+					
+
+
+
+
+
+
+				body{    font-size: 16px !important;
+						 font-family: 'Open Sans',Arial,sans-serif;
+						 text-shadow: 1px 1px 1px rgb(0 0 0 / 0%);
+
+						 	
+						width: 98%;
+    					height: 98%;
+					    position: absolute;
+					    left: 0;
+					    top: 0;
+					    background: #015025;
+					    opacity: 1;
+					    z-index: 1;
+					    color: #02c358;
+
+					    display: flex;
+
+
+					}
+
+					/*.frame { 
+						border: 2px solid whitesmoke;
+						position: relative;
+					 }
+*/
+/* 
+    			.button{cursor: pointer;
+					    position: absolute;
+					    right: 20px;
+					    top: 20px;
+					    padding: 0;
+					    z-index: 99999;}  	
+
+				 .button i{ background-color:#fff;
+		 					font-size: 50px;
+							font-weight: 400;
+						    line-height: 1;
+						    color: #fff;
+						    opacity: 1;
+							display: inline-block;
+						    width: 1em;
+						    height: 1em;} 
+
+
+				.button:hover { 
+					box-shadow: 0 0 0 0.5rem #e00f7b47;
+	 									}*/
+
+
+
+	 			.close{
+	 				  display: inline-block;
+					  padding: 10px;
+					  cursor: pointer;
+
+
+					  position: absolute;
+					  left: 0%;
+					  top: 20px;
+					  padding: 0;
+
+					  background: #015025;
+	 			}
+
+	 			.close button {
+					  font-size: 40px;
+					  display: inline-block;
+					  border: 1px solid #76dea4;
+					  padding: 0 10px;
+					  cursor: pointer;
+					  color: #76dea4;
+					  background: #015025;
+					}
+
+
+					.close a {
+					  font-size: 40px;
+					  display: inline-block;
+					  /*border: 1px solid #76dea4;*/
+					  padding: 0 10px;
+					  cursor: pointer;
+					  color: #76dea4;
+					  background: #015025;
+					}
+
+				.c { 
+					color: #004620;
+				 }
+
+
+/*................Mobile & Tablet interface............................*/
+
+
+
+
+			@media only screen and (max-width: 520px) {
+		  /* For mobile phones: */
+		  
+
+
+
+		  body { 
+	  			  /*background: #458ac1;*/
+	  			  scroll-behavior: smooth;
+
+		  		  width: 100%;
+				  
+				   }
+
+
+		 .close{
+	 				  display: inline-block;
+					  padding: 10px;
+					  cursor: pointer;
+
+
+					  position: absolute;
+					  left: 0%;
+					  top: 20px;
+					  padding: 0;
+
+					  background: #015025;}
+
+
+
+		  form {
+					  border: 2px solid #015025;
+					  font-family: Arial;
+					  margin-top: 35px;
+					  /*background: #02c358;*/
+
+
+					  width: 100%;
+					  left: 0;
+					  right: 0;
+					  position: absolute;
+					}
+		
+
+	}
+
+
+
+@media only screen and (max-width: 425px) {
+				/* For mobile phones: */
+
+		
+				
+		  body { 
+		  			/*background: #458ac1;*/
+		  			scroll-behavior: smooth;
+		  			flex-direction: column;
+		  			margin: 0;
+		   }
+
+
+		   /*.button i{
+				    width: 0.7em;
+				    height: 0.7em;} 
+*/
+
+
+			 .button img{ width: 30px;
+			 			  margin: -10px 1px 8px 1px;
+			 			  /*position: relative;*/
+ 					} 
+
+ 			 .button i{
+				    width: 0.7em;
+				    height: 0.7em;} 
+
+
+
+			 .button img{ width: 30px;
+			 			  margin: -10px 1px 8px 1px;
+			 			  /*position: relative;*/
+ 					} 
+
+
+
+ 			
+		  .form1 {
+					  /*border: 2px solid #015025;*/
+					  font-family: Arial;
+					  margin-top: 35px;
+					  /*background: #02c358;*/
+
+
+					  width: 100%;
+					  left: 0;
+					  right: 0;
+					  /*position: absolute;*/
+					}
+
+			 .form2 {
+					  /*border: 2px solid #015025;*/
+					  font-family: Arial;
+					  margin-top: -46px;
+					  /*background: #02c358;*/
+
+
+					  width: 100%;
+					  left: 0;
+					  right: 0;
+					  /*position: absolute;*/
+					  margin-left: 2px;
+					}
+
+
+					.item-img{
+						max-width: 100%;
+						min-width: 210px;
+						padding: 8px;
+					}
+					
+	
+	}
+		  
+
+	.platform {
+
+		width: 35%;
+	    /*padding: 10px;*/
+	    display: flex;
+	    flex-direction: row;
+    	justify-content: flex-start;
+    	align-items: baseline;
+	}
+
+.platform img{
+
+		max-width: 45%;
+		min-width: 40px;
+    	padding: 3px 15px;
+	}
+
+.platform span, a {
+
+	}
+
+@media only screen and (max-width: 740px){
+
+	.platform img {
+    max-width: 45%;
+    min-width: 20px;
+    padding: 3px 15px;
+	}
+
+	
+}
+
+@media only screen and (max-width: 540px){
+
+	.platform img {
+    max-width: 45%;
+    min-width: 9px;
+    padding: 3px 15px;
+	}
+
+}
+
+
+@media only screen and (max-width: 425px){
+
+	.platform img {
+    max-width: 45%;
+    min-width: 28px;
+    padding: 3px 15px;
+	}
+
+	
+}
+
+@media only screen and (max-width: 240px){
+
+	.platform img {
+    padding: 4px;
+	}
+
+	
+}
+
+
+	#frame {
+
+		margin-top: 1px;
+	}
+
+
+	</style>
+
+</head>
+
+<body>
+ 	
+		
+			<div class="form1">
+
+			  <!-- <div id="icont" class="note-icon"></div>
+			  <div id="dp" class="note"></div> -->
+			  	
+			  <div class="container" id="frame">
+			    <!-- <h2 id="frame">Subscribe to our Newsletter</h2>
+			    <p id="frame">Our news letter subscribtion provides best updates on <i class="fa fa-bell c"></i>:
+		        <br>
+		        <br>  
+		        Soccer articles <i class="fa fa-check c" aria-hidden="true"></i>
+		        <br>
+		        <br> 
+		        Match predictions <i class="fa fa-check c" aria-hidden="true"></i>
+		        <br>
+		        <br> 
+		        News updates <i class="fa fa-check c" aria-hidden="true"></i>
+		        </p> -->
+		        <img src="../assets/item/Sony SRS-XG500 X-Series Wireless.jpg" class="item-img" style="">
+		        <img src="../assets/item/Sony SRS-XG500 X-Series Wireless.jpg" class="item-img" style="">
+			  </div>
+
+			  <!-- <div class="container" style="background-color:#02c358; margin-top: -19px;" id="frame"> -->
+			    
+			  </div>
+
+			</div>
+
+
+ 	        <div class="form2">
+
+			  <div class="container2">
+			    <h2 id="frame">Item Description</h2>
+			    <p id="frame">Review<i class="fa fa-bell c"></i>:
+		        <br>
+		        <br>  
+		        Soccer articles <i class="fa fa-check c" aria-hidden="true"></i>
+		        <br>
+		        <br> 
+		        Match predictions <i class="fa fa-check c" aria-hidden="true"></i>
+		        <br>
+		        <br> 
+		        News updates <i class="fa fa-check c" aria-hidden="true"></i>
+		        </p>
+
+			  </div>
+
+			  <!-- <div class="container2" style="margin-top: -19px;" id="frame">
+			    
+			  </div> -->
+			  <div class="container2" id="frame">
+				  <div class="platform">
+				  		<a href="">
+				  			
+				  			<img src="../assets/platform/amazon.png">
+				  			
+				  		</a>
+				  	
+					  	<a href="" style="border-left: 1px solid #01180c52;">
+					  		
+					  		<img src="../assets/platform/ebay.png">
+					  		
+					  	</a>
+				    
+					  	<a href="" style="border-left: 1px solid #01180c52;">
+					  		
+					  		<img src="../assets/platform/alibaba.png">
+					  		
+					  	</a>
+				  	
+					  	<a href="" style="border-left: 1px solid #01180c52;">
+					  		
+					  		<img src="../assets/platform/shopify.png">
+					  		
+					  	</a>
+				  </div>
+			  </div>
+
+			  <div class="container2 check-out" id="frame">
+			  	<a href="">Check out</a>
+			    <!-- <input type="submit" value="Check out"> -->
+			  </div>
+			</div>
+ 
+
+<div class="close">
+		<button  onclick="history.back()">
+			<a href="../index.html">
+				<i class="fa fa-angle-double-left"></i>
+			</a>
+		</button>
+
+</div>
+
+
+</body>
+</html> 
