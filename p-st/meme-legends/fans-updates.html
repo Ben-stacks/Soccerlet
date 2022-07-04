@@ -414,78 +414,78 @@
    <!-- advert section 1 & 2 ends here -->
 
 
-  <!-- #Meme=image=form# -->
-  <div class="memeupload">
-    <div class="form-popup" id="myForm" style="background: #015025;">
-      <form name="memeform" action="https://www.soccerlet.com/p-st/redirect_/meme-submission-successful.html" method="POST" data-netlify="true" enctype="multipart/form-data" autocomplete="off" style="background: #015025;">
-          <div class="form-container">
-            <button type="button" class="btn cancel" onclick="closeForm()">
-            Close
-            </button>
-          </div>
-
-          
-          <h4 style="margin-left: 12px;">
-            Upload and submit your <strong>meme</strong> here
-          </h4>
-          
-          
-          <div class="form-container">
-            <label for="namee">Name</label>
-            <input type="text" name="name" id="name" class="form-controll"/>
-            <span></span>
-          </div>
-           <div class="form-container">
-            <label for="Email">Email</label>
-            <input type="Email" name="email" id="email" class="form-controll" required="required"/>
-            <span></span>
-          </div>
-          <div class="form-container">
-            <label for="caption">Meme Caption</label>
-            <input type="text" name="caption" id="caption" class="form-controll"/>
-            <span>Write a short description</span>
-          </div>
-
-          <!-- bot detection -->
-          <div class="form-container">
-              <input type="checkbox" name="botcheck" id="bot" style="display: none;">
-              <p style="display: none;">
-                 <label>Don’t fill this out if you’re human: 
-                      <input name="bot-field" />
-                 </label>
-              </p>
-          </div>
-          <div class="form-group file-area">
-            <label for="images">Select Image</label>
-            <input type="file" name="images" id="images" required="required"/>
-            <div class="file-dummy">
-              <div class="default"><p>Please upload image file of jpg, jpeg, png extension</p></div>
+    <!-- #Meme=image=form# -->
+    <div class="memeupload">
+      <div class="form-popup" id="myForm" style="background: #015025;">
+        <form action="submission/success.html" id="memeform" name="memeform" method="POST" data-netlify="true" enctype="multipart/form-data" autocomplete="off" style="background: #015025;">
+            <div class="form-container">
+              <button type="button" class="btn cancel" onclick="closeForm()">
+              Close
+              </button>
             </div>
-            <span>Min Dimension 700x500 wide<br>Max file size is 1.5MB</span>
-            <span></span>
-          </div>
 
-          <div class="form-container">
-            <button type="submit">submit image</button>
-          </div>
-      </form>
+            
+            <h4 style="margin-left: 12px;">
+              Upload and submit your <strong>meme</strong> here
+            </h4>
+            
+            
+            <div class="form-container">
+              <label for="namee">Name</label>
+              <input type="text" name="name" id="name" class="form-controll"/>
+              <span></span>
+            </div>
+             <div class="form-container">
+              <label for="Email">Email</label>
+              <input type="Email" name="email" id="email" class="form-controll" required="required"/>
+              <span></span>
+            </div>
+            <div class="form-container">
+              <label for="caption">Meme Caption</label>
+              <input type="text" name="caption" id="caption" class="form-controll"/>
+              <span>Write a short description</span>
+            </div>
+
+            <!-- bot detection -->
+            <div class="form-container">
+                <input type="checkbox" name="botcheck" id="bot" style="display: none;">
+                <p style="display: none;">
+                   <label>Don’t fill this out if you’re human: 
+                        <input name="bot-field" />
+                   </label>
+                </p>
+            </div>
+            <div class="form-group file-area">
+              <label for="images">Select Image</label>
+              <input type="file" name="images" id="images" required="required"/>
+              <div class="file-dummy">
+                <div class="default"><p>Please upload image file of jpg, jpeg, png extension</p></div>
+              </div>
+              <span>Min Dimension 700x500 wide<br>Max file size is 1.5MB</span>
+              <span></span>
+            </div>
+
+            <div class="form-container">
+              <button type="submit" name="button">submit image</button>
+            </div>
+        </form>
+      </div>
+      <button class="open-button" onclick="openForm()">
+      <i class="fa fa-upload u" aria-hidden="true"></i>
+        Upload Image
+      </button>
+      <div style="padding: 8px; margin-left: 15px;">
+        <span>
+          Upload your memes.
+        </span><br>
+        <span>
+        Attach a water mark, name, brand or social icon if you have any.
+        </span><br><br>
+        <span style="color: #72eda9;">
+          Note: Only football related concept will be accepted
+        </span>
+      </div>
     </div>
-    <button class="open-button" onclick="openForm()">
-    <i class="fa fa-upload u" aria-hidden="true"></i>
-      Upload Image
-    </button>
-    <div style="padding: 8px; margin-left: 15px;">
-      <span>
-        Upload your memes.
-      </span><br>
-      <span>
-      Attach a water mark, name, brand or social icon if you have any.
-      </span><br><br>
-      <span style="color: #72eda9;">
-        Note: Only football related concept will be accepted
-      </span>
-    </div>
-  </div>
 
 
     <div style="margin-bottom: 0; margin-top: 0;" id="news"></div>
