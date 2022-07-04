@@ -1440,6 +1440,8 @@ Toggles/collapsibles(arccordiong) Ends Here
     flex-direction: column;
     align-items: center;
     margin-top: 15px;
+
+    margin-bottom: 50px;
    }
 
 .tg  {border-collapse:collapse;
@@ -1473,7 +1475,7 @@ Toggles/collapsibles(arccordiong) Ends Here
         word-break:normal;
       }
 
-.tg .tg-ya04{ background-color:#007465;
+.tg .tg-ya04{ background-color:#00544b;
               color:#62f1a1;
               border: 0px solid transparent;
               text-align:left;
@@ -1513,7 +1515,7 @@ Toggles/collapsibles(arccordiong) Ends Here
              vertical-align:bottom;
            }
 
-.tg .tg-okg3{background-color:#007465;
+.tg .tg-okg3{background-color:#00544b;
              border-color:transparent;
              text-align:left;
              vertical-align:top;
@@ -1555,7 +1557,7 @@ Toggles/collapsibles(arccordiong) Ends Here
 
 
 
-.tg .tg-gnri{background-color:#3d7858;
+.tg .tg-gnri{background-color:#316448;
              border: 5px solid transparent;
              text-align:center;
              vertical-align:center;
@@ -1599,6 +1601,17 @@ Toggles/collapsibles(arccordiong) Ends Here
 
 }
 
+
+
+.tree-cont { 
+    display: flex;
+    flex-direction: row;
+    margin-top: 65px;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
 
   /*======================
    PREDICTION TABLE ENDS
