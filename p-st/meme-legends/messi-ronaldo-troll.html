@@ -448,7 +448,7 @@
     <!-- #Meme=image=form# -->
     <div class="memeupload">
       <div class="form-popup" id="myForm" style="background: #015025;">
-        <form action="submission/success.html" id="memeform" name="memeform" method="POST" data-netlify="true" enctype="multipart/form-data" autocomplete="off" style="background: #015025;">
+        <form action="redirect_/meme-submission-successful.html" id="memeform" name="memeform" method="POST" data-netlify="true" enctype="multipart/form-data" autocomplete="off" style="background: #015025;">
             <div class="form-container">
               <button type="button" class="btn cancel" onclick="closeForm()">
               Close
@@ -605,9 +605,7 @@
     <div class="contact">
        <p>Send us Messege</p>
 
-       <form class="form" autocomplete="off" action="https://api.web3forms.com/submit" method="POST">
-
-              <input type="hidden" name="access_key" value="ba682e87-461e-490b-bf86-b38db0af2ce6">
+       <form class="form" action="redirect_/message-successful.html" id="contact" name="contact" method="POST" data-netlify="true" autocomplete="off">
 
 
               <!-- Notification cap -->
@@ -663,10 +661,9 @@
 
 
               <!-- confirmation or redirection -->
-              <input type="hidden" name="redirect" value="https://erd3tng11fufr1cpfsw7cw.on.drv.tw/Comfirmation/redirect_/successful.html">
-
+              <!-- <input type="hidden" name="redirect" value="https://erd3tng11fufr1cpfsw7cw.on.drv.tw/Comfirmation/redirect_/successful.html">
+ -->
        </form>
-
     </div>
 
 
