@@ -1605,8 +1605,8 @@ Toggles/collapsibles(arccordiong) Ends Here
 
 .tree-cont { 
     display: flex;
-    flex-direction: column;
-    /*margin-top: 65px;*/
+    flex-direction: row;
+    margin-top: 65px;
     text-align: center;
     align-items: center;
     flex-wrap: wrap;

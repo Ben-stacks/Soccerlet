@@ -1,10 +1,7 @@
 
-
-
-
-.body {
- /* width: 100wh;
-  height: 90vh;*/
+body {
+  width: 100wh;
+  height: 90vh;
   color: #fff;
   background: linear-gradient(-45deg, #2ea161, #049f49, #00544b, #56b982);
   background-size: 400% 400%;
@@ -49,8 +46,8 @@
   }
 }
 
-.h1,
-.h6 {
+h1,
+h6 {
   font-family: 'Open Sans';
   font-weight: 300;
   text-align: center;
@@ -91,15 +88,14 @@
   }
 
   .linktree {
-    max-width: 75%;
-    min-width: 130px;
-
-    /*height: 120px;*/
-    /*background-image: url("../../../img/promo/1x2betbannerblue.jpg");*/
-    /*background-size: cover;
+    width: 120px;
+    height: 120px;
+    background-image: url("https://i.imgur.com/oggcsIH.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 50%;*/
+    background-position: 50% 50%;
   }
+
 
 
   .btn-outline-custom {
@@ -111,7 +107,8 @@
 
 
 .btn-outline-light:hover{
-  opacity: 0.8;
+
+  background-color: transparent !important;
 }
 
 .btn-outline-light:active:focus{
@@ -119,27 +116,6 @@
    background: transparent !important;
 }
 
-
-.btn {
-   display: inline-block; */
-    /* font-weight: 400; */
-    text-align: center;
-    /* white-space: nowrap; */
-    /* vertical-align: middle; */
-    user-select: none;
-    border: 1px solid transparent;
-    padding: 0.375rem 0.75rem;
-    /* font-size: 1rem; */
-    /* line-height: 1.5; */
-    border-radius: 0.25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-.text-center {
-
-  text-align: center;
-
-}
 
 /*ACTION STYLE*/
 
