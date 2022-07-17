@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Mail Subscribtion</title>
+
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=1.0">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="text/css" href="../../img/fav.png">
+	<link href="../fontawesome/css/font-awesome.min.css" rel="stylesheet" />
+	
+	<style type="text/css">
+		       
+       
+
+               form {
+					  border: 2px solid #015025;
+					  font-family: Arial;
+
+					  width: 50%;
+					  left: 30%;
+					  margin-top: 35px;
+					  /*background: #02c358;*/
+					  position: absolute;
+					  left: 20;
+					  color: #05e569;
+					  padding: 22px;
+					  font-size: 22px;
+					  text-align: left;
+					}
+
+					.container {
+					  padding: 20px;
+					  background-color: #02c358;
+					  color: #013419;
+					  font-size: 16px !important;
+					  text-align: left;
+
+
+					}
+
+					.note{ 
+					  padding: 25px;
+					  background-color: #02c358;
+					  color: #013c1c;
+					  font-size: 22px !important;
+					  text-align: center;
+					  margin-bottom: -70px;
+    				  font-weight: 600;
+
+    				  /*display: none;*/
+					 }
+
+					 .note-icon{ 
+					  padding: 25px;
+					  background-color: #02c358;
+					  color: #013c1c;
+					  font-size: 22px !important;
+					  text-align: center;
+					  margin-bottom: -20px;
+    				  font-weight: 600;
+
+    				  text-align: center;
+					 }
+
+
+
+					 .s { 
+				          color: #004620;
+				          font-size: 65px;
+				         }
+
+
+					input[type=text], input[type=email], input[type=submit] {
+					  width: 100%;
+					  padding: 12px;
+					  margin: 8px 0;
+					  display: inline-block;
+					  /*border: 1px solid #015025;*/
+					  box-sizing: border-box;
+					  font-family: sans-serif;
+
+					  border: none;
+					  outline: none;
+					  color: #015025;
+					  background: #76dea4;
+					  font-size: 17px !important;
+					}
+
+
+
+					input[type=submit] {
+					  background-color: #015025;
+					  color: #76dea4;
+					  border: none;
+					}
+
+					input[type=submit]:hover {
+					  opacity: 0.8;
+					} 
+
+
+
+
+
+
+
+				body{    font-size: 16px !important;
+						 font-family: 'Open Sans',Arial,sans-serif;
+						 text-shadow: 1px 1px 1px rgb(0 0 0 / 0%);
+
+						 	
+						width: 98%;
+    					height: 98%;
+					    position: absolute;
+					    left: 0;
+					    top: 0;
+					    background: #015025;
+					    opacity: 1;
+					    z-index: 1;
+					    color: #02c358;
+					}
+
+					/*.frame { 
+						border: 2px solid whitesmoke;
+						position: relative;
+					 }
+*/
+/* 
+    			.button{cursor: pointer;
+					    position: absolute;
+					    right: 20px;
+					    top: 20px;
+					    padding: 0;
+					    z-index: 99999;}  	
+
+				 .button i{ background-color:#fff;
+		 					font-size: 50px;
+							font-weight: 400;
+						    line-height: 1;
+						    color: #fff;
+						    opacity: 1;
+							display: inline-block;
+						    width: 1em;
+						    height: 1em;} 
+
+
+				.button:hover { 
+					box-shadow: 0 0 0 0.5rem #e00f7b47;
+	 									}*/
+
+
+
+	 			.close{
+	 				  display: inline-block;
+					  padding: 10px;
+					  cursor: pointer;
+
+
+					  position: absolute;
+					  left: 30%;
+					  top: 20px;
+					  padding: 0;
+
+					  background: #015025;
+	 			}
+
+	 			.close button {
+					  font-size: 40px;
+					  display: inline-block;
+					  border: 1px solid #76dea4;
+					  padding: 0 10px;
+					  cursor: pointer;
+					  color: #76dea4;
+					  background: #015025;
+					}
+
+
+				.c { 
+					color: #004620;
+				 }
+
+
+/*................Mobile & Tablet interface............................*/
+
+
+
+
+			@media only screen and (max-width: 520px) {
+		  /* For mobile phones: */
+		  
+
+
+
+		  body { 
+	  			  /*background: #458ac1;*/
+	  			  scroll-behavior: smooth;
+
+		  		  width: 100%;
+				  
+				   }
+
+
+		 .close{
+	 				  display: inline-block;
+					  padding: 10px;
+					  cursor: pointer;
+
+
+					  position: absolute;
+					  left: 0%;
+					  top: 20px;
+					  padding: 0;
+
+					  background: #015025;}
+
+
+
+		  form {
+					  border: 2px solid #015025;
+					  font-family: Arial;
+					  margin-top: 35px;
+					  /*background: #02c358;*/
+
+
+					  width: 100%;
+					  left: 0;
+					  right: 0;
+					  position: absolute;
+					}
+		
+
+	}
+
+
+
+@media only screen and (max-width: 425px) {
+				/* For mobile phones: */
+
+		
+				
+		  body { 
+		  			/*background: #458ac1;*/
+		  			scroll-behavior: smooth;
+		   }
+
+
+		   /*.button i{
+				    width: 0.7em;
+				    height: 0.7em;} 
+*/
+
+
+			 .button img{ width: 30px;
+			 			  margin: -10px 1px 8px 1px;
+			 			  /*position: relative;*/
+ 					} 
+
+ 			 .button i{
+				    width: 0.7em;
+				    height: 0.7em;} 
+
+
+
+			 .button img{ width: 30px;
+			 			  margin: -10px 1px 8px 1px;
+			 			  /*position: relative;*/
+ 					} 
+
+
+
+ 			
+		  form {
+					  border: 2px solid #015025;
+					  font-family: Arial;
+					  margin-top: 35px;
+					  /*background: #02c358;*/
+
+
+					  width: 100%;
+					  left: 0;
+					  right: 0;
+					  position: absolute;
+					}
+
+	
+	}
+		  
+
+
+
+
+	</style>
+
+</head>
+
+<body>
+ 	
+		
+			<form id="gform" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd_rNLBI09oyJYWgeKTJPqfFh_ahtl2i9e9oJijBknpWgC97Q/formResponse" target="hidden_iframe" onsubmit="submitted=true;" autocomplete="off">
+
+			  <div id="icont" class="note-icon"></div>
+			  <div id="dp" class="note"></div>
+			  	
+			  <div class="container" id="frame">
+			    <h2 id="frame">Subscribe to our Newsletter</h2>
+			    <p id="frame">Our news letter subscribtion provides best updates on <i class="fa fa-bell c"></i>:
+		        <br>
+		        <br>  
+		        Soccer articles <i class="fa fa-check c" aria-hidden="true"></i>
+		        <br>
+		        <br> 
+		        Match predictions <i class="fa fa-check c" aria-hidden="true"></i>
+		        <br>
+		        <br> 
+		        News updates <i class="fa fa-check c" aria-hidden="true"></i>
+		        </p>
+			  </div>
+
+			  <div class="container" style="background-color:#02c358; margin-top: -19px;" id="frame">
+
+			    <input type="text" placeholder="Name" name="entry.716550385" required>
+			    <input type="email" placeholder="Email address" name="entry.1070571395" required>
+
+			  </div>
+
+			   <!-- bot detection -->
+              <input type="checkbox" name="botcheck" id="" style="display: none;">
+              <p style="display: none;">
+                 <label>Don’t fill this out if you’re human: 
+                      <input id="bot-field" name="entry.1835934643" />
+                 </label>
+              </p>
+
+			  <div class="container" id="frame">
+			    <input type="submit" value="Subscribe">
+			  </div>
+			</form>
+ 	        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+ 
+
+<div class="close">
+		<button  onclick="history.back()">x</button>
+
+</div>
+
+
+<script src="jquery.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+
+$('#gform').on('submit', function(e) {
+  // $('#gform *').fadeOut(2000);
+  $('#frame *').fadeOut(500);
+  // $('#frame *').remove();
+
+  $('#icont').append('<i class="fa fa-check-circle s" aria-hidden="true"></i>');
+  $('#dp').prepend('Great! Subscription Successful!');
+  });
+</script>
+</body>
+</html> 
