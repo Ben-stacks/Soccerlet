@@ -1650,3 +1650,205 @@ Toggles/collapsibles(arccordiong) Ends Here
     /*text-shadow: 1px 0 0 rgba(0, 0, 0, 0);*/
   }
 }
+
+
+
+
+/*awaiting package style*/
+.package{color: #aafbcf;
+    padding: 15px;
+    text-align: center;
+    background: linear-gradient(rgb(46 161 97),rgb(46 161 97 / 85%), rgb(46 161 97 / 44%)), url(../../../img/package.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    outline: none;
+    border: none;
+    box-shadow: 0.3px 0.3px 0.3px 3px #02c358;
+    /* box-shadow: none; */}
+
+
+
+/*typing animation*/
+
+:root {
+  /*--background: #121212;*/
+  --background: linear-gradient(rgb(46 161 97),rgb(46 161 97 / 95%), rgb(46 161 97)), url(../../../img/package.jpg);
+  --primary:#aafbcf;
+}
+.animtext{
+  display:flex;
+  align-items:center;
+}
+.animtext > .static-txt {
+  color: #fff;
+  font-size: 33px;
+}
+
+.animtext > .dynamic-txt {
+  color: #aafbcf;
+  font-size:33px;
+  height:70px;
+  line-height:70px;
+  overflow:hidden;
+  margin-left:0 0 0 15px;
+  padding-left: 15px;
+}
+.dynamic-txt > li {
+  list-style:none;
+  /*font-weight:500;*/
+  position: relative;
+  animation: slide 6s steps(2) infinite;
+}
+@keyframes slide{
+  100% {
+    top: -70px;
+  }
+}
+.dynamic-txt li span {
+  margin:5px 0;
+  line-height:70px;
+}
+
+.dynamic-txt li span::after {
+  position:absolute;
+  content:'';
+  left:0;
+  height:100%;
+  width:100%;
+  line-height:70px;
+  background:var(--background);
+  border-left: 2px solid var(--primary);
+  animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+  40%,60% {left: calc(100% + 30px);}
+  100% {left:0;}
+}
+
+
+
+@media only screen and (max-width: 365px) {
+
+.animtext{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+}
+.animtext > .static-txt {
+  color: #fff;
+  font-size: 19px;
+}
+
+
+.animtext > .dynamic-txt {
+  
+  font-size:19px;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 620px) and (min-width: 366px) {
+
+.animtext{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+}
+.animtext > .static-txt {
+  color: #fff;
+  font-size: 25px;
+}
+
+
+.animtext > .dynamic-txt {
+  
+  font-size:25px;
+  }
+
+}
+
+@media only screen and (max-width: 770px) and (min-width: 619px) {
+
+.animtext > .static-txt {
+  color: #fff;
+  font-size: 30px;
+}
+
+.animtext > .dynamic-txt {
+  
+  font-size:30px;
+  }
+
+}
+
+
+
+
+
+/* count down styling */
+:root {
+  --smaller: .75;
+}
+
+.contdown-cont {
+  align-items: center;
+  background-color: #ffd54f;
+  display: flex;
+  font-family: -apple-system, 
+    BlinkMacSystemFont, 
+    "Segoe UI", 
+    Roboto, 
+    Oxygen-Sans, 
+    Ubuntu, 
+    Cantarell, 
+    "Helvetica Neue", 
+    sans-serif;
+}
+
+.contdown {
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.countdown-x li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+.countdown-x li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+
+#headline {
+
+    background: #06c159;
+    padding: 9px;
+}
+#no { 
+    display: none;
+ }
+
+@media all and (max-width: 768px) {
+  .countdown-x h1 {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+  
+  .countdown-x li {
+    font-size: calc(1.125rem * var(--smaller));
+  }
+  
+  .countdown-x li span {
+    font-size: calc(3.375rem * var(--smaller));
+  }
+}
