@@ -1621,7 +1621,7 @@ Toggles/collapsibles(arccordiong) Ends Here
 
   /* subtle zoom to attention and then back */
 .pop-outin {
-  animation: 7s anim-popoutin ease infinite;
+ /* animation: 7s anim-popoutin ease infinite;*/
 }
 
 @keyframes anim-popoutin {
