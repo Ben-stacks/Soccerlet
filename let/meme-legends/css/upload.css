@@ -63,6 +63,16 @@
 }
 
 
+.form-container input[type=text]:focus {
+    outline: 2px solid #76dea4;
+    /*border: 2px solid #76dea4;*/
+}
+.form-container input[type=email]:focus {
+    outline: 2px solid #76dea4;
+    /*border: 2px solid #76dea4;*/
+}
+
+
 
 
 /* Add a red background color to the cancel button */
@@ -122,8 +132,9 @@
   }
   
  .form-popup input[type=file]:focus + .file-dummy {
-    outline: 2px solid rgba(255,255,255,0.5);
-    outline: -webkit-focus-ring-color auto 5px;
+    /*outline: 2px solid rgba(255,255,255,0.5);*/
+    outline: 2px solid rgb(118 222 164 / 85%);
+    /*outline: -webkit-focus-ring-color auto 5px;*/
 
   }
   
