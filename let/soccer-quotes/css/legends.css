@@ -1911,6 +1911,10 @@ Toggles/collapsibles(arccordiong) Ends Here
     padding: 0;
     text-align: center;
   }*/
+  .desc {
+    padding: 9px;
+    text-align: center;
+  }
 
   @media only screen and (max-width: 650px) { 
 
