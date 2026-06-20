@@ -1820,7 +1820,7 @@ Toggles/collapsibles(arccordiong) Ends Here
 
 /*awaiting package style*/
 .package{color: #aafbcf;
-    padding: 15px;
+    padding: 25px;
     text-align: center;
     background: linear-gradient(rgb(46 161 97),rgb(46 161 97 / 85%), rgb(46 161 97 / 44%)), url(../../../img/package.jpg);
     background-repeat: no-repeat;
@@ -1828,7 +1828,7 @@ Toggles/collapsibles(arccordiong) Ends Here
     background-size: cover;
     outline: none;
     border: none;
-    box-shadow: 0.3px 0.3px 0.3px 3px #02c358;
+    /* box-shadow: 0.3px 0.3px 0.3px 3px #02c358; */
     /* box-shadow: none; */}
 
 
